@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
       this.http.post(this.url, JSON.stringify(formData))
       .subscribe(res => {
         console.log(res);
-        alert('Form submitted successfully');
+        alert(JSON.stringify(res));
         this.form.reset();
       },
         (error) => {
